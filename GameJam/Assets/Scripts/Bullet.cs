@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        if (GameObject.FindGameObjectWithTag("Ally") != null)
+        if (GameObject.FindGameObjectWithTag("Ally"))
         {
             GameObject ally = GameObject.FindGameObjectWithTag("Ally");
             Physics2D.IgnoreCollision(ally.GetComponent<Collider2D>(), GetComponent<Collider2D>());

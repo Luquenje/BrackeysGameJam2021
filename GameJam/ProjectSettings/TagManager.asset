@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Civ
   - Obstacle
+  - Ally
   layers:
   - Default
   - TransparentFX
