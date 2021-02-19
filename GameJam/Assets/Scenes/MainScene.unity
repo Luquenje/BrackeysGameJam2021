@@ -25495,10 +25495,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e7aecadc1e8fa458864d230a25ba09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   firePoint: {fileID: 751375990}
   normalBulletPrefab: {fileID: 3548183600645244461, guid: 5dd698afeb3a7c54f9097e00e3971933, type: 3}
   healingBulletPrefab: {fileID: 7070939541991415953, guid: cae80240253a1354daf08c489967e492, type: 3}
   specialBulletPrefab: {fileID: 5684253761653475428, guid: 22fdfd55f3f8fc54e884bb58a12aca0e, type: 3}
+  rB: {fileID: 0}
+  cam: {fileID: 0}
   bulletType: 0
   bulletForce: 50
 --- !u!95 &305857911
@@ -25711,6 +25714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751375990}
+  - component: {fileID: 751375991}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -25726,12 +25730,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751375989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 1.08, z: 0}
+  m_LocalPosition: {x: 0.43, y: 0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 305857906}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751375991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751375989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e7aecadc1e8fa458864d230a25ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 751375989}
+  firePoint: {fileID: 751375990}
+  normalBulletPrefab: {fileID: 3548183600645244461, guid: 5dd698afeb3a7c54f9097e00e3971933, type: 3}
+  healingBulletPrefab: {fileID: 7070939541991415953, guid: cae80240253a1354daf08c489967e492, type: 3}
+  specialBulletPrefab: {fileID: 5684253761653475428, guid: 22fdfd55f3f8fc54e884bb58a12aca0e, type: 3}
+  rB: {fileID: 305857907}
+  cam: {fileID: 519420031}
+  bulletType: 0
+  bulletForce: 20
 --- !u!1 &1177712588
 GameObject:
   m_ObjectHideFlags: 0
@@ -143544,7 +143569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2145321316
 Transform:
   m_ObjectHideFlags: 0

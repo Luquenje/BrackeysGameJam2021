@@ -135,3 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 6745282202696703120, guid: c207567849e1cec4fa9855a50c7f5224, type: 3}
+  bulletType: 2
