@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 593de5cdff5df674489a41d720e93c00
+guid: ea7be6f80bc42994186c009846dd045c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1006469703302679188
-    second: infectedMC_idle-Sheet_0
+      213: 5702695945985561103
+    second: Civ1_scared_0
   - first:
-      213: 7485467866237957031
-    second: infectedMC_idle-Sheet_1
+      213: -7358830803844937739
+    second: Civ1_scared_1
   - first:
-      213: 385775456867231080
-    second: infectedMC_idle-Sheet_2
+      213: -4518023639023121718
+    second: Civ1_scared_2
   - first:
-      213: -5458404938287087154
-    second: infectedMC_idle-Sheet_3
+      213: 7585849435292872048
+    second: Civ1_scared_3
   - first:
-      213: -85708509933075665
-    second: infectedMC_idle-Sheet_4
+      213: -43820037298076590
+    second: Civ1_scared_4
+  - first:
+      213: 3769274351298212750
+    second: Civ1_scared_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_0
+      name: Civ1_scared_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c657379232d4802f0800000000000000
-      internalID: -1006469703302679188
+      spriteID: f02978aafbb042f40800000000000000
+      internalID: 5702695945985561103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_1
+      name: Civ1_scared_1
       rect:
         serializedVersion: 2
         x: 160
@@ -165,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3f6b85d59b1e760800000000000000
-      internalID: 7485467866237957031
+      spriteID: 5f7ce966f5e20e990800000000000000
+      internalID: -7358830803844937739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_2
+      name: Civ1_scared_2
       rect:
         serializedVersion: 2
         x: 320
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 865a2adebbc8a5500800000000000000
-      internalID: 385775456867231080
+      spriteID: aca85351071cc41c0800000000000000
+      internalID: -4518023639023121718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_3
+      name: Civ1_scared_3
       rect:
         serializedVersion: 2
         x: 480
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec10925e0a9df34b0800000000000000
-      internalID: -5458404938287087154
+      spriteID: 07daa3eaed9564960800000000000000
+      internalID: 7585849435292872048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_4
+      name: Civ1_scared_4
       rect:
         serializedVersion: 2
         x: 640
@@ -228,8 +231,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23063770908fcef0800000000000000
-      internalID: -85708509933075665
+      spriteID: 254cdc288e1546ff0800000000000000
+      internalID: -43820037298076590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civ1_scared_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83fe125d072f4430800000000000000
+      internalID: 3769274351298212750
       vertices: []
       indices: 
       edges: []

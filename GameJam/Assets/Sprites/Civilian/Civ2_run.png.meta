@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 593de5cdff5df674489a41d720e93c00
+guid: df646b4f958ecab4dbc58f458a6dafc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1006469703302679188
-    second: infectedMC_idle-Sheet_0
+      213: 4728691034164479024
+    second: Civ2_run_0
   - first:
-      213: 7485467866237957031
-    second: infectedMC_idle-Sheet_1
+      213: -2180531762144863415
+    second: Civ2_run_1
   - first:
-      213: 385775456867231080
-    second: infectedMC_idle-Sheet_2
+      213: 5404561530733749150
+    second: Civ2_run_2
   - first:
-      213: -5458404938287087154
-    second: infectedMC_idle-Sheet_3
+      213: 7831178957233093722
+    second: Civ2_run_3
   - first:
-      213: -85708509933075665
-    second: infectedMC_idle-Sheet_4
+      213: 440605722554969165
+    second: Civ2_run_4
+  - first:
+      213: 2724755268944464309
+    second: Civ2_run_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_0
+      name: Civ2_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c657379232d4802f0800000000000000
-      internalID: -1006469703302679188
+      spriteID: 034c2ff117faf9140800000000000000
+      internalID: 4728691034164479024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_1
+      name: Civ2_run_1
       rect:
         serializedVersion: 2
         x: 160
@@ -165,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3f6b85d59b1e760800000000000000
-      internalID: 7485467866237957031
+      spriteID: 94b16ef4ae13db1e0800000000000000
+      internalID: -2180531762144863415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_2
+      name: Civ2_run_2
       rect:
         serializedVersion: 2
         x: 320
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 865a2adebbc8a5500800000000000000
-      internalID: 385775456867231080
+      spriteID: e93602ed31cd00b40800000000000000
+      internalID: 5404561530733749150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_3
+      name: Civ2_run_3
       rect:
         serializedVersion: 2
         x: 480
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec10925e0a9df34b0800000000000000
-      internalID: -5458404938287087154
+      spriteID: a5c746e25cfedac60800000000000000
+      internalID: 7831178957233093722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_4
+      name: Civ2_run_4
       rect:
         serializedVersion: 2
         x: 640
@@ -228,8 +231,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23063770908fcef0800000000000000
-      internalID: -85708509933075665
+      spriteID: d4ca4eaf1985d1600800000000000000
+      internalID: 440605722554969165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civ2_run_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b90f411b7640d520800000000000000
+      internalID: 2724755268944464309
       vertices: []
       indices: 
       edges: []

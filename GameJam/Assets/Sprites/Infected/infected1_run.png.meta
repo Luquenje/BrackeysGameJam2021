@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 593de5cdff5df674489a41d720e93c00
+guid: 64ee05e5b616e5d40a2ed17434d57f19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1006469703302679188
-    second: infectedMC_idle-Sheet_0
+      213: 5053287912126501059
+    second: infected1_run_0
   - first:
-      213: 7485467866237957031
-    second: infectedMC_idle-Sheet_1
+      213: 6890605839164152477
+    second: infected1_run_1
   - first:
-      213: 385775456867231080
-    second: infectedMC_idle-Sheet_2
+      213: -5526761482856943754
+    second: infected1_run_2
   - first:
-      213: -5458404938287087154
-    second: infectedMC_idle-Sheet_3
+      213: 7381177451077104893
+    second: infected1_run_3
   - first:
-      213: -85708509933075665
-    second: infectedMC_idle-Sheet_4
+      213: 2819695436051982268
+    second: infected1_run_4
+  - first:
+      213: -3927675309732736017
+    second: infected1_run_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_0
+      name: infected1_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c657379232d4802f0800000000000000
-      internalID: -1006469703302679188
+      spriteID: 3c053162592e02640800000000000000
+      internalID: 5053287912126501059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_1
+      name: infected1_run_1
       rect:
         serializedVersion: 2
         x: 160
@@ -165,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3f6b85d59b1e760800000000000000
-      internalID: 7485467866237957031
+      spriteID: d9a9c92b08950af50800000000000000
+      internalID: 6890605839164152477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_2
+      name: infected1_run_2
       rect:
         serializedVersion: 2
         x: 320
@@ -186,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 865a2adebbc8a5500800000000000000
-      internalID: 385775456867231080
+      spriteID: 67f2000a6bffc43b0800000000000000
+      internalID: -5526761482856943754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_3
+      name: infected1_run_3
       rect:
         serializedVersion: 2
         x: 480
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec10925e0a9df34b0800000000000000
-      internalID: -5458404938287087154
+      spriteID: df4f29bd8c53f6660800000000000000
+      internalID: 7381177451077104893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: infectedMC_idle-Sheet_4
+      name: infected1_run_4
       rect:
         serializedVersion: 2
         x: 640
@@ -228,8 +231,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23063770908fcef0800000000000000
-      internalID: -85708509933075665
+      spriteID: cb72ba84f02912720800000000000000
+      internalID: 2819695436051982268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: infected1_run_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3de429d181e79c0800000000000000
+      internalID: -3927675309732736017
       vertices: []
       indices: 
       edges: []

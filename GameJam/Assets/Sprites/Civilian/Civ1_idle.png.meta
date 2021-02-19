@@ -1,52 +1,52 @@
 fileFormatVersion: 2
-guid: 828e7465821973046bd798ab5902106b
+guid: 0bf4137e21b667c479dd30d16298f19b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6170963487698723960
-    second: armed_Idle-Sheet_0
+      213: -6184535314796076958
+    second: Civ1_idle_0
   - first:
-      213: 420718941330630106
-    second: armed_Idle-Sheet_1
+      213: -3008753440853281107
+    second: Civ1_idle_1
   - first:
-      213: 1290437563980045121
-    second: armed_Idle-Sheet_2
+      213: 8609673902914218030
+    second: Civ1_idle_2
   - first:
-      213: -7713362183880490163
-    second: armed_Idle-Sheet_3
+      213: 5750424191920607696
+    second: Civ1_idle_3
   - first:
-      213: -1809844380106375410
-    second: armed_Idle-Sheet_4
+      213: -438157427736568576
+    second: Civ1_idle_4
   - first:
-      213: -2184877059681219461
-    second: armed_Idle-Sheet_5
+      213: 7044308630968485107
+    second: Civ1_idle_5
   - first:
-      213: -2643982022898189032
-    second: armed_Idle-Sheet_6
+      213: 1936740151893647372
+    second: Civ1_idle_6
   - first:
-      213: -2868540621289027950
-    second: armed_Idle-Sheet_7
+      213: -997175172044255368
+    second: Civ1_idle_7
   - first:
-      213: 8130544748896074853
-    second: armed_Idle-Sheet_8
+      213: -5350345254136971215
+    second: Civ1_idle_8
   - first:
-      213: -6841669926703092704
-    second: armed_Idle-Sheet_9
+      213: 6843154413546467168
+    second: Civ1_idle_9
   - first:
-      213: 4871350916466962041
-    second: armed_Idle-Sheet_10
+      213: 8828843880715818492
+    second: Civ1_idle_10
   - first:
-      213: 3737233114591080879
-    second: armed_Idle-Sheet_11
+      213: 1731013079913488255
+    second: Civ1_idle_11
   - first:
-      213: -752243172431451164
-    second: armed_Idle-Sheet_12
+      213: -7187729544803317370
+    second: Civ1_idle_12
   - first:
-      213: 832119589477585376
-    second: armed_Idle-Sheet_13
+      213: -4398745220694938354
+    second: Civ1_idle_13
   - first:
-      213: 8764262536401065353
-    second: armed_Idle-Sheet_14
+      213: 1384268086956822152
+    second: Civ1_idle_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: armed_Idle-Sheet_0
+      name: Civ1_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 874203ec89aa3a550800000000000000
-      internalID: 6170963487698723960
+      spriteID: 260a8b4f5ed1c2aa0800000000000000
+      internalID: -6184535314796076958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_1
+      name: Civ1_idle_1
       rect:
         serializedVersion: 2
         x: 160
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad56a48e5a1b6d500800000000000000
-      internalID: 420718941330630106
+      spriteID: da6b435cfa2ce36d0800000000000000
+      internalID: -3008753440853281107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_2
+      name: Civ1_idle_2
       rect:
         serializedVersion: 2
         x: 320
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14bd9dd902e88e110800000000000000
-      internalID: 1290437563980045121
+      spriteID: e2827277cc4bb7770800000000000000
+      internalID: 8609673902914218030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_3
+      name: Civ1_idle_3
       rect:
         serializedVersion: 2
         x: 480
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d434fddf5f1a4f490800000000000000
-      internalID: -7713362183880490163
+      spriteID: 0d19d33e55c9dcf40800000000000000
+      internalID: 5750424191920607696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_4
+      name: Civ1_idle_4
       rect:
         serializedVersion: 2
         x: 640
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0fb501102422e6e0800000000000000
-      internalID: -1809844380106375410
+      spriteID: 00d1014142a5be9f0800000000000000
+      internalID: -438157427736568576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_5
+      name: Civ1_idle_5
       rect:
         serializedVersion: 2
         x: 800
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7c0dc3e3e1cda1e0800000000000000
-      internalID: -2184877059681219461
+      spriteID: 3f44815a06962c160800000000000000
+      internalID: 7044308630968485107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_6
+      name: Civ1_idle_6
       rect:
         serializedVersion: 2
         x: 960
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81d72accb50be4bd0800000000000000
-      internalID: -2643982022898189032
+      spriteID: c006bd728eea0ea10800000000000000
+      internalID: 1936740151893647372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_7
+      name: Civ1_idle_7
       rect:
         serializedVersion: 2
         x: 1120
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2960a4cc085e038d0800000000000000
-      internalID: -2868540621289027950
+      spriteID: 87f867bd6725922f0800000000000000
+      internalID: -997175172044255368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_8
+      name: Civ1_idle_8
       rect:
         serializedVersion: 2
         x: 1280
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56c3e542f5f75d070800000000000000
-      internalID: 8130544748896074853
+      spriteID: 1300875b651cfb5b0800000000000000
+      internalID: -5350345254136971215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_9
+      name: Civ1_idle_9
       rect:
         serializedVersion: 2
         x: 1440
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02ca36c43718d01a0800000000000000
-      internalID: -6841669926703092704
+      spriteID: 06f659abea4c7fe50800000000000000
+      internalID: 6843154413546467168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_10
+      name: Civ1_idle_10
       rect:
         serializedVersion: 2
         x: 1600
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97e694859d38a9340800000000000000
-      internalID: 4871350916466962041
+      spriteID: cf592777bba568a70800000000000000
+      internalID: 8828843880715818492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_11
+      name: Civ1_idle_11
       rect:
         serializedVersion: 2
         x: 1760
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa1370e87b15dd330800000000000000
-      internalID: 3737233114591080879
+      spriteID: f7f5cc1993bc50810800000000000000
+      internalID: 1731013079913488255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_12
+      name: Civ1_idle_12
       rect:
         serializedVersion: 2
         x: 1920
@@ -426,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eba28af1de7f85f0800000000000000
-      internalID: -752243172431451164
+      spriteID: 6890b6caf0e004c90800000000000000
+      internalID: -7187729544803317370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_13
+      name: Civ1_idle_13
       rect:
         serializedVersion: 2
         x: 2080
@@ -447,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e1947d9b584c8b00800000000000000
-      internalID: 832119589477585376
+      spriteID: e0de70ff68484f2c0800000000000000
+      internalID: -4398745220694938354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: armed_Idle-Sheet_14
+      name: Civ1_idle_14
       rect:
         serializedVersion: 2
         x: 2240
@@ -468,8 +468,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9851370875ae0a970800000000000000
-      internalID: 8764262536401065353
+      spriteID: 88e88fcad78e53310800000000000000
+      internalID: 1384268086956822152
       vertices: []
       indices: 
       edges: []
