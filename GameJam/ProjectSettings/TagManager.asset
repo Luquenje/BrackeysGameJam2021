@@ -7,6 +7,8 @@ TagManager:
   - Civ
   - Obstacle
   - Ally
+  - PlayerHitPoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
