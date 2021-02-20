@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour
     float timeBtwnShots;
     public float startTimeBtwnShots = 0.5f;
 
-    public GameObject projectile;
+    public GameObject projectileAimPlayer;
+    public GameObject projectileAimMinions;
 
     Transform target;
 
@@ -21,6 +22,8 @@ public class EnemyController : MonoBehaviour
 
     public GameObject[] wallArray;
     public Transform[] moveSpots;
+    public GameObject[] allies;
+    public GameObject[] minions;
     int randomSpot;
     public float startWaitTime;
     float waitTime;
@@ -29,6 +32,8 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        allies = GameObject.FindGameObjectsWithTag("Enemy");
+        minions = GameObject.FindGameObjectsWithTag("Ally");
         timeBtwnShots = startTimeBtwnShots;
         wallArray = GameObject.FindGameObjectsWithTag("Obstacle");
         randomSpot = Random.Range(0, moveSpots.Length);
@@ -41,21 +46,101 @@ public class EnemyController : MonoBehaviour
             float distanceSqr = (transform.position - tr.transform.position).sqrMagnitude;
             if (distanceSqr < wallRange)
             {
-                transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -3 * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -2 * Time.deltaTime);
             }
             else
             {
+                foreach (GameObject minion in minions)
+                {
+                    if(minion != null)
+                    {
+                        if (Vector2.Distance(transform.position, target.position) > backOffDist && Vector2.Distance(transform.position, minion.transform.position) > backOffDist - 2)
+                        {
+
+                            Patrol();
+                            AvoidAllies();
+                        }
+                        else
+                        {
+
+                            float distanceToTarget = (transform.position - minion.transform.position).sqrMagnitude;
+                            Debug.Log(distanceToTarget);
+                            if (distanceToTarget < backOffDist + 1 && minion.activeSelf == true && minion.transform != null)
+                            {
+
+                                ChaseMinion(minion.transform);
+                                AvoidAllies();
+                            }
+                            else
+                            {
+                                ChasePlayer();
+                                AvoidAllies();
+                            }
+
+
+                        }
+                    }
+                    else
+                    {
+                        if (Vector2.Distance(transform.position, target.position) > backOffDist)
+                        {
+
+                            Patrol();
+                            AvoidAllies();
+                        }
+                        else
+                        {
+                            ChasePlayer();
+                            AvoidAllies();
+                        }
+
+                    }
+                    
+                }
+                
+            }
+                
+        }
+    }
+
+    private void ChaseMinion(Transform tr)
+    {
+        Debug.Log("aadasd");
+        
+            if (Vector2.Distance(transform.position, tr.position) > stopDist)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, tr.position, speed * Time.deltaTime);
+            }
+            if (Vector2.Distance(transform.position, tr.position) < stopDist - 2)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, tr.position, retreatSpeed * Time.deltaTime);
+            }
+        ShootMinions();
+    }
+
+    void AvoidAllies()
+    {
+        foreach (GameObject tr in allies)
+        {
+            float distanceSqr = (transform.position - tr.transform.position).sqrMagnitude;
+            if (distanceSqr < stopDist - 0.5)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -3 * Time.deltaTime);
+
+            }
+            /*else
+            {
                 if (Vector2.Distance(transform.position, target.position) > backOffDist)
                 {
-                    Patrol();
+                    FollowPlayer();
                 }
                 else
                 {
-                    ChasePlayer();
+                    ChaseEnemy();
                 }
 
-            }
-                
+            }*/
+
         }
     }
 
@@ -99,7 +184,20 @@ public class EnemyController : MonoBehaviour
     {
         if (timeBtwnShots <= 0)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity);
+            Instantiate(projectileAimPlayer, transform.position, Quaternion.identity);
+            timeBtwnShots = startTimeBtwnShots;
+        }
+        else
+        {
+            timeBtwnShots -= Time.deltaTime;
+        }
+    }
+
+    void ShootMinions()
+    {
+        if (timeBtwnShots <= 0)
+        {
+            Instantiate(projectileAimMinions, transform.position, Quaternion.identity);
             timeBtwnShots = startTimeBtwnShots;
         }
         else

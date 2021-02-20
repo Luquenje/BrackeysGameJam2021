@@ -5,7 +5,7 @@ using UnityEngine;
 public class AllyController : MonoBehaviour
 {
     public float speed;
-    public float patrolSpeed;
+    /*public float patrolSpeed;*/
     public float retreatSpeed;
     float timeBtwnShots;
     public float startTimeBtwnShots = 0.5f;
@@ -48,12 +48,12 @@ public class AllyController : MonoBehaviour
             float distanceSqr = (transform.position - tr.transform.position).sqrMagnitude;
             if (distanceSqr < wallRange)
             {
-                transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -3 * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -2 * Time.deltaTime);
             }
             else
             {
-                if(enemies != null)
-                {
+                /*if(enemies != null)
+                {*/
                     foreach (GameObject help in enemies)
                     {
                         if (Vector2.Distance(transform.position, help.transform.position) > backOffDist)
@@ -69,11 +69,11 @@ public class AllyController : MonoBehaviour
 
 
                     }
-                }
-                else
+                //}
+                /*else
                 {
                     FollowPlayer();
-                }
+                }*/
                 
 
             }
@@ -83,18 +83,18 @@ public class AllyController : MonoBehaviour
 
     private void FollowPlayer()
     {
-        /*if (Vector2.Distance(transform.position, playerTarget.position) > playerStopDist)
+        if (Vector2.Distance(transform.position, playerTarget.position) > playerStopDist)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, speed * Time.deltaTime);
-        }*/
-        if (Vector2.Distance(transform.position, playerTarget.position) < playerStopDist - 3)
+        }
+        if (Vector2.Distance(transform.position, playerTarget.position) < playerStopDist - 1)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, retreatSpeed * Time.deltaTime);
         }
-        else
+        /*else
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, speed * Time.deltaTime);
-        }
+        }*/
     }
 
     void AvoidAllies()
@@ -102,9 +102,10 @@ public class AllyController : MonoBehaviour
         foreach (GameObject tr in allies)
         {
             float distanceSqr = (transform.position - tr.transform.position).sqrMagnitude;
-            if (distanceSqr < playerStopDist - 3)
+            if (distanceSqr < playerStopDist - 1)
             {
                 transform.position = Vector2.MoveTowards(transform.position, tr.transform.position, -3 * Time.deltaTime);
+                
             }
             /*else
             {
@@ -130,7 +131,7 @@ public class AllyController : MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position, help.transform.position, speed * Time.deltaTime);
             }
-            if (Vector2.Distance(transform.position, help.transform.position) < stopDist - 0.5)
+            if (Vector2.Distance(transform.position, help.transform.position) < stopDist - 1)
             {
                 transform.position = Vector2.MoveTowards(transform.position, help.transform.position, retreatSpeed * Time.deltaTime);
             }
@@ -145,7 +146,7 @@ public class AllyController : MonoBehaviour
         GetInactiveInRadius();
     }
 
-    void Patrol()
+    /*void Patrol()
     {
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, patrolSpeed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
@@ -160,7 +161,7 @@ public class AllyController : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
-    }
+    }*/
 
     void Shoot()
     {

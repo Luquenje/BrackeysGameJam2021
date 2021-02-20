@@ -11,16 +11,33 @@ public class EnemyBullet : MonoBehaviour
 
     Transform player;
     Vector3 target;
-    
+    public GameObject minions;
+    public int targetNo;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("PlayerHitPoint").GetComponent<Transform>();
-        
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        target = new Vector3(player.position.x, player.position.y, player.position.z);
-        transform.right = target - transform.position;
+        minions = GameObject.FindGameObjectWithTag("Ally");
+
+        if(targetNo == 1)
+        {
+            target = new Vector3(player.position.x, player.position.y, player.position.z);
+            transform.right = target - transform.position;
+        }
+        if(targetNo == 2)
+        {
+            
+                float distanceSqr = (transform.position - minions.transform.position).sqrMagnitude;
+                
+                    target = new Vector3(minions.transform.position.x, minions.transform.position.y, minions.transform.position.z);
+                    transform.right = target - transform.position;
+                
+            
+                
+        }
+        
         
 
     }
