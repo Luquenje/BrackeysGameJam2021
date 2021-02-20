@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
+/*using Pathfinding;*/
 
 public class EnemyAI : MonoBehaviour
 {
@@ -11,40 +11,40 @@ public class EnemyAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
-    Path path;
-    int currentWaypoint = 0;
-    bool reachedEndOfPath = false;
+   /* Path path;*/
+    /*int currentWaypoint = 0;
+    bool reachedEndOfPath = false;*/
 
-    Seeker seeker;
-    Rigidbody2D rb;
+    /*Seeker seeker;*/
+    /*Rigidbody2D rb;*/
 
     // Start is called before the first frame update
     void Start()
     {
-        seeker = GetComponent<Seeker>();
+        /*seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 
-        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        InvokeRepeating("UpdatePath", 0f, 0.5f);*/
         
     }
 
-    private void UpdatePath()
+    /*private void UpdatePath()
     {
         if (seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
         }
-    }
+    }*/
     
 
-    void OnPathComplete(Path p)
+    /*void OnPathComplete(Path p)
     {
         if (!p.error)
         {
             path = p;
             currentWaypoint = 0;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void FixedUpdate()
@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
 
         //Pathfinding
-        if (path == null)
+       /* if (path == null)
             return;
 
         if(currentWaypoint >= path.vectorPath.Count)
@@ -74,6 +74,6 @@ public class EnemyAI : MonoBehaviour
         if(distance < nextWaypointDistance)
         {
             currentWaypoint++;
-        }
+        }*/
     }
 }
