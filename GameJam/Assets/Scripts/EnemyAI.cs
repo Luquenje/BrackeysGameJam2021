@@ -11,12 +11,12 @@ public class EnemyAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
-   /* Path path;*/
-    /*int currentWaypoint = 0;
-    bool reachedEndOfPath = false;*/
+    /*Path path;*/
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
 
     /*Seeker seeker;*/
-    /*Rigidbody2D rb;*/
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +28,13 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    /*private void UpdatePath()
+    private void UpdatePath()
     {
-        if (seeker.IsDone())
+        /*if (seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
-        }
-    }*/
+        }*/
+    }
     
 
     /*void OnPathComplete(Path p)
@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
 
         //Pathfinding
-       /* if (path == null)
+        /*if (path == null)
             return;
 
         if(currentWaypoint >= path.vectorPath.Count)
