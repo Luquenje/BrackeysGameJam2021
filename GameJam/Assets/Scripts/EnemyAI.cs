@@ -6,19 +6,17 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
 
-    //public Transform target;
+    public Transform target;
 
-    //public float speed = 200f;
-    //public float nextWaypointDistance = 3f;
+    public float speed = 200f;
+    public float nextWaypointDistance = 3f;
 
     /*Path path;*/
-    //int currentWaypoint = 0;
-    //bool reachedEndOfPath = false;
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
 
     /*Seeker seeker;*/
-    //Rigidbody2D rb;
-
-    Vector3 startingPos;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +25,8 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);*/
-
-        startingPos = transform.position;
         
     }
-
 
     private void UpdatePath()
     {
