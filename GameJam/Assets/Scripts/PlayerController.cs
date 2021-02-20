@@ -9,21 +9,24 @@ public class PlayerController : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject allyPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        allyPrefab = Resources.Load("Ally 1") as GameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    // Insert Damage or Heal checks here
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Damage(20);
+        if (currentHealth <= 0){
+            if (gameObject.tag == "Enemy"){
+                Instantiate(allyPrefab, gameObject.transform.localPosition, Quaternion.identity);
+            }
+            Destroy(gameObject);
         }
     }
 

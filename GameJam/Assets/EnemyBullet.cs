@@ -6,7 +6,8 @@ public class EnemyBullet : MonoBehaviour
 {
 
     public float speed;
-
+   //public PlayerController playerController;
+    //public PlayerController enemyController;
     public GameObject hitEffect;
 
     Transform player;
@@ -57,6 +58,12 @@ public class EnemyBullet : MonoBehaviour
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1);
         Destroy(gameObject);
+        if (collision.tag == "Player"){
+            collision.gameObject.GetComponent<PlayerController>().Damage(10);
+        }
 
+        if (collision.tag == "Ally"){
+            collision.gameObject.GetComponent<PlayerController>().Damage(10);
+        }
     }
 }

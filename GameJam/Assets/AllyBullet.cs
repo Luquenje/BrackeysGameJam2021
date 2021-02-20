@@ -36,9 +36,13 @@ public class AllyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+
+        if (collision.tag == "Enemy"){
+                    GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1);
         Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerController>().Damage(10);
+        }
 
     }
 }
