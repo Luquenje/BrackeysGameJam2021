@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3607098891306637688}
   - component: {fileID: 1760284739267869114}
   - component: {fileID: 6826816520874365743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PinkHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}

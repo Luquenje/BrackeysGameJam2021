@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8354744195868683366}
   - component: {fileID: 1421700125203603583}
   - component: {fileID: 6370018133571052298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OrangeHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
