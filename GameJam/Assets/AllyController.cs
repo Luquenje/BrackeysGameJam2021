@@ -44,6 +44,7 @@ public class AllyController : MonoBehaviour
 
     void GetInactiveInRadius()
     {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject tr in wallArray)
         {
             float distanceSqr = (transform.position - tr.transform.position).sqrMagnitude;
@@ -53,8 +54,8 @@ public class AllyController : MonoBehaviour
             }
             else
             {
-                /*if(enemies != null)
-                {*/
+                if (enemies != null)
+                {
                     foreach (GameObject help in enemies)
                     {
                         if (Vector2.Distance(transform.position, help.transform.position) > backOffDist)
@@ -70,14 +71,14 @@ public class AllyController : MonoBehaviour
 
 
                     }
-                //}
-                /*else
-                {
-                    FollowPlayer();
-                }*/
-                
+                }
+                else
+                    {
+                        FollowPlayer();
+                    }
 
-            }
+
+                }
 
         }
     }

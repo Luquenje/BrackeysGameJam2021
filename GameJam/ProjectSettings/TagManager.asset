@@ -10,6 +10,7 @@ TagManager:
   - PlayerHitPoint
   - Enemy
   - enemyDie
+  - EnemyDetect
   layers:
   - Default
   - TransparentFX

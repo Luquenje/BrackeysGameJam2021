@@ -1,32 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*using Pathfinding;*/
+using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
 
-    //public Transform target;
+    public Transform target;
 
-    //public float speed = 200f;
-    //public float nextWaypointDistance = 3f;
+    public float speed = 200f;
+    public float nextWaypointDistance = 3f;
 
-    /*Path path;*/
-    //int currentWaypoint = 0;
-    //bool reachedEndOfPath = false;
+    Path path;
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
 
-    /*Seeker seeker;*/
-    //Rigidbody2D rb;
+    Seeker seeker;
+    Rigidbody2D rb;
 
     Vector3 startingPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        /*seeker = GetComponent<Seeker>();
+        seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        InvokeRepeating("UpdatePath", 0f, 0.5f);*/
+        InvokeRepeating("UpdatePath", 0f, 0.5f);
 
         startingPos = transform.position;
         
@@ -35,21 +36,21 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdatePath()
     {
-        /*if (seeker.IsDone())
+        if (seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
-        }*/
+        }
     }
-    
 
-    /*void OnPathComplete(Path p)
+
+    void OnPathComplete(Path p)
     {
         if (!p.error)
         {
             path = p;
             currentWaypoint = 0;
         }
-    }*/
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -57,14 +58,15 @@ public class EnemyAI : MonoBehaviour
 
 
         //Pathfinding
-        /*if (path == null)
+        if (path == null)
             return;
 
-        if(currentWaypoint >= path.vectorPath.Count)
+        if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
         }
-        else { 
+        else
+        {
             reachedEndOfPath = false;
         }
 
@@ -76,9 +78,9 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
-        if(distance < nextWaypointDistance)
+        if (distance < nextWaypointDistance)
         {
             currentWaypoint++;
-        }*/
+        }
     }
 }

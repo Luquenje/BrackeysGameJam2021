@@ -30,14 +30,14 @@ public class EnemyBullet : MonoBehaviour
         }
         if(targetNo == 2)
         {
-            
-                float distanceSqr = (transform.position - minions.transform.position).sqrMagnitude;
-                
-                    target = new Vector3(minions.transform.position.x, minions.transform.position.y, minions.transform.position.z);
-                    transform.right = target - transform.position;
-                
-            
-                
+
+            /*float distanceSqr = (transform.position - minions.transform.position).sqrMagnitude;*/
+
+            target = new Vector3(minions.transform.position.x, minions.transform.position.y, minions.transform.position.z);
+            //transform.right = target - transform.position;
+
+
+
         }
         
         
@@ -47,15 +47,16 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         //transform.position += transform.forward * speed * Time.deltaTime;
-        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
+        //transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
 
         Destroy(gameObject, 1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.tag == "Player"){
             collision.gameObject.GetComponent<PlayerController>().Damage(10);
 
@@ -66,9 +67,12 @@ public class EnemyBullet : MonoBehaviour
         }
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1);
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
-
+        if (collision.tag != "EnemyDetect")
+        {
+            Destroy(gameObject);
+        }
 
     }
 }
