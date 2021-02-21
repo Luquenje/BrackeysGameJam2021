@@ -36,12 +36,15 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
             facingRight = true;
-            anim.SetBool("isRun", true);
+
         }
 
         if (Input.GetAxisRaw("Horizontal") > 0 || Input.GetAxisRaw("Horizontal") < 0 || Input.GetAxisRaw("Vertical") < 0 || Input.GetAxisRaw("Vertical") > 0)
         {
             anim.SetBool("isRun", true);
+        }
+        else {
+            anim.SetBool("isRun", false);
         }
 
         //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);

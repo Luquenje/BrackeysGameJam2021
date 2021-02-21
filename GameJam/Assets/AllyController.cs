@@ -28,6 +28,7 @@ public class AllyController : MonoBehaviour
     int randomSpot;
     public float startWaitTime;
     float waitTime;
+    bool isSpawn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -144,6 +145,17 @@ public class AllyController : MonoBehaviour
     void Update()
     {
         GetInactiveInRadius();
+
+    // I thought AI didnt work cos it doesnt spawn with this
+        if (isSpawn == false){
+            playerTarget = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            allies = GameObject.FindGameObjectsWithTag("Ally");
+            enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            timeBtwnShots = startTimeBtwnShots;
+            wallArray = GameObject.FindGameObjectsWithTag("Obstacle");
+            randomSpot = Random.Range(0, moveSpots.Length);
+            isSpawn = true;
+        }
     }
 
     /*void Patrol()
@@ -175,4 +187,6 @@ public class AllyController : MonoBehaviour
             timeBtwnShots -= Time.deltaTime;
         }
     }
+
+    
 }

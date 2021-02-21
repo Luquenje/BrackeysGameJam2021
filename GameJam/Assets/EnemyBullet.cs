@@ -15,6 +15,7 @@ public class EnemyBullet : MonoBehaviour
     public GameObject minions;
     public int targetNo;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,15 +56,19 @@ public class EnemyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 1);
-        Destroy(gameObject);
         if (collision.tag == "Player"){
             collision.gameObject.GetComponent<PlayerController>().Damage(10);
-        }
 
+        }
+        
         if (collision.tag == "Ally"){
             collision.gameObject.GetComponent<PlayerController>().Damage(10);
         }
+        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 1);
+        Destroy(gameObject);
+
+
+
     }
 }

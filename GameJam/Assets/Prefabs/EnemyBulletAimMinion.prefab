@@ -113,6 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  hitEffect: {fileID: 6745282202696703120, guid: c207567849e1cec4fa9855a50c7f5224, type: 3}
+  hitEffect: {fileID: 5757197002599991447, guid: 4a2b51fda6caca44bbc92dfbda0bbcca, type: 3}
   minions: {fileID: 0}
   targetNo: 2
