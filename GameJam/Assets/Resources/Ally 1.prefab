@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb70d9bd1e78fd94cbd5bda4aa9aa53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.06
+  speed: 0.2
   retreatSpeed: -3
   startTimeBtwnShots: 10
   projectile: {fileID: 5396487422684821213, guid: b7e8cde99078d734290d33c0e7c200b8, type: 3}
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 200
+  speed: 500
   nextWaypointDistance: 3
   startTimeBtwnShots: 0.5
   hitEffect: {fileID: 5757197002599991447, guid: 4a2b51fda6caca44bbc92dfbda0bbcca, type: 3}

@@ -63,13 +63,13 @@ public class EnemyBullet : MonoBehaviour
         }
         
         if (collision.tag == "Ally"){
-            collision.gameObject.GetComponent<PlayerController>().Damage(10);
+            collision.gameObject.GetComponent<PlayerController>().Damage(20);
         }
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 1);
         //Destroy(gameObject);
 
-        if (collision.tag != "EnemyDetect")
+        if (collision.tag != "EnemyDetect" && collision.tag != "Enemy")
         {
             Destroy(gameObject);
         }
